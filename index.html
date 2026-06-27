@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TypeScript</title>
+    <link rel="stylesheet" href="../CSS/index.css">
+</head>
+<body>
+
+    <!-- Apartado de TypeScript -->
+    <h1 style="text-align: center; font-family: monospace;">TypeScript</h1>
+    <h3>¿Qué es TypeScript?</h3>
+    <p>TypeScript es un lenguaje de programación desarrollado y mantenido por Microsoft. Es un superconjunto de JavaScript, lo que significa que cualquier código JavaScript válido también es código TypeScript válido. TypeScript agrega características adicionales al lenguaje, como tipado estático, interfaces y clases, lo que permite a los desarrolladores escribir código más robusto y fácil de mantener.</p>
+    
+    <h3>Como tipar variables</h3>
+    <p>En TypeScript, puedes tipar variables de varias maneras:</p>
+    <ul>
+        <li><strong>Tipado explícito:</strong> Especificas el tipo de dato al declarar la variable.</li>
+        <p> Debemos colocar el tipo después de su nombre. TypeScript también puede inferir el tipo automáticamente si le asignas un valor inicial como vemos en el siguiente ejemplo:</p>
+        <img src="IMG/Ejemplo1Typescript.png" alt="" width="500" height="200" style="display: block; margin: 0 auto; border-radius: 10px;">
+
+        <li><strong>Tipado implícito:</strong> TypeScript infiere el tipo de dato a partir del valor asignado.</li>
+
+        <p>Como se indica, si ponemos un numero TypeScript lo inferirá como un tipo 'number'. Y si ponemos un texto, lo inferirá como un tipo 'string'.</p>
+
+        <h3>Pero siempre es recomendable usar tipado explícito por profesionalismo y mantenibilidad.</h3>
+    </ul>
+    
+    <br>
+    <br>
+    <h3>Como tipar funciones</h3>
+    <p>En TypeScript, puedes tipar funciones especificando los tipos de los parámetros y el tipo de retorno. Esto ayuda a garantizar que las funciones se utilicen correctamente y facilita la detección de errores en tiempo de compilación.</p>
+
+    <p>Se deben tipar tanto los parámetros de entrada como el valor de retorno de la función.</p>
+    <img src="IMG/Ejemplo2TypescriptFunciones.png" alt="" width="500" height="280" style="display: block; margin: 0 auto; border-radius: 10px;">
+
+
+    
+
+
+
+
+
+
+
+
+
+    <!-- Aparrtado de comandos de angular CLI -->
+    <div class="que-es-angular-cli">
+        <h1>¿Que es Angular CLI?</h1>
+        <p>Angular CLI (Command Line Interface) es una herramienta de línea de comandos que facilita la creación, desarrollo y despliegue de aplicaciones Angular. Proporciona un conjunto de comandos para generar componentes, módulos, servicios y otros elementos de una aplicación Angular, así como para compilar y ejecutar la aplicación en entornos de desarrollo y producción. Normalmente sus comandos manejan el prefijo <strong>'ng'</strong>.</p>
+
+        <h2>configuración e instalación</h2>
+        <h4>Instalación global</h4>
+        <ul>
+            <li>Para instalar Angular CLI, necesitas tener Node.js y npm (Node Package Manager) instalados en tu sistema. Una vez que tengas Node.js y npm, puedes instalar Angular CLI globalmente usando el siguiente comando:</li>
+            <p><strong>npm install -g @angular/cli</strong></p>
+        </ul>
+
+
+
+        <h4>Ver su versión</h4>
+        <ul>
+            <li>Para verificar la versión de Angular CLI instalada, puedes usar el siguiente comando:</li>
+            <p><strong>ng version o ng -v</strong></p>
+        </ul>
+
+
+        <h4>Actualizar CLI y dependencias</h4>
+        <ul>
+            <li>Para actualizar Angular CLI y sus dependencias, puedes usar el siguiente comando:</li>
+            <p><strong>ng update</strong></p>
+        </ul>
+
+
+
+        <h2>Gestión de proyectos</h2>
+        <h4>Crear un nuevo proyecto</h4>
+        <ul>
+            <li>Para crear un nuevo proyecto Angular, puedes usar el siguiente comando:</li>
+            <p><strong>ng new nombre-del-proyecto</strong></p>
+        </ul>
+
+
+        <h4>Iniciar servidor local</h4>
+        <ul>
+            <li>Para iniciar el servidor local de un proyecto Angular, puedes usar el siguiente comando:</li>
+            <p><strong>ng serve o ng server --open</strong></p>
+        </ul>
+
+
+        <h4>Compilar para producción</h4>
+        <ul>
+            <li>Para compilar la aplicación Angular para producción, puedes usar el siguiente comando:</li>
+            <p><strong>ng build</strong></p>
+        </ul>
+
+
+
+        <h4>Configuración del proyecto</h4>
+        <ul>
+            <li>Para configurar el proyecto Angular, puedes usar el siguiente comando:</li>
+            <p><strong>ng config</strong></p>
+        </ul>
+
+
+
+
+        <h2>Gestión de proyectos</h2>
+        <h4>Pruebas unitarias</h4>
+        <ul>
+            <li>Para ejecutar pruebas unitarias en un proyecto Angular, puedes usar el siguiente comando:</li>
+            <p><strong>ng test</strong></p>
+        </ul>
+
+
+        <h4>Pruebas End to End (E2E)</h4>
+        <ul>
+            <li>Para ejecutar pruebas End to End en un proyecto Angular, puedes usar el siguiente comando:</li>
+            <p><strong>ng e2e</strong></p>
+        </ul>
+
+
+        <h2>Qué son los stand alone components en angular?</h2>
+        <p>Los Standalone Components en Angular son una característica que permite crear componentes independientes y reutilizables sin necesidad de declararlos en un módulo. Esto facilita la modularidad y la reutilización de componentes en diferentes partes de una aplicación Angular. Los Standalone Components pueden ser utilizados directamente en plantillas de otros componentes o módulos, lo que simplifica la estructura del proyecto y mejora la mantenibilidad del código.</p>
+
+        <h2>Estructura de un proyecto Angular</h2>
+        <p>La estructura de un proyecto Angular sigue una organización específica que facilita la gestión y mantenimiento del código. Los archivos principales se encuentran en la carpeta `src`, que contiene los componentes, servicios, módulos y otros recursos necesarios para el funcionamiento de la aplicación. <strong>(src/app), los archivos estáticos (src/assets), las configuraciones globales (angular.json) y las dependencias (package.json)</strong></p>
+
+
+        <ul>
+            <li><strong>src/:</strong> Es la carpeta principal donde desarrollarás toda tu aplicación.</li>
+
+            <li><strong>angular.json:</strong> Archivo de configuración clave para el compilador de Angular, las rutas de los assets, los entornos y la configuración de las compilaciones.</li>
+
+            <li><strong>package.json:</strong> Lista de dependencias (npm o yarn), scripts de ejecución (como ng serve para desarrollo) y metadatos del proyecto.</li>
+
+            <li><strong>tsconfig.json:</strong> Configuración del compilador de TypeScript.</li>
+        </ul>
+    </div>
+</body>
+</html>
